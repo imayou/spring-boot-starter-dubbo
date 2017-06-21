@@ -91,5 +91,4 @@ public class DubboAutoConfiguration {
 		}
 		return consumerConfig;
 	}
-
 }

@@ -5,10 +5,6 @@ import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
 
-/**
- * @author xiaofei.wxf(teaey)
- * @since 0.0.0
- */
 @SuppressWarnings("rawtypes")
 public class DubboHolderListener implements ApplicationListener {
     private static Thread holdThread;
