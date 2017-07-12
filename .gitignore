@@ -25,6 +25,7 @@ target/
 *.tmp
 
 # system ignore
+.factorypath
 .DS_Store
 Thumbs.db
 
