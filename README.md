@@ -75,7 +75,6 @@ spring.dubbo.application.name=provider
 spring.dubbo.registry.address=zookeeper://192.168.99.100:32770
 spring.dubbo.protocol.name=dubbo
 spring.dubbo.protocol.port=20880
-spring.dubbo.scan=cn.teaey.sprintboot.test
 ```
 
 
@@ -90,6 +89,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@DubboComponentScan("cn.teaey.sprintboot.test")
 public class Server {
     public static void main(String[] args) {
         SpringApplication.run(Server.class, args);
@@ -123,7 +123,7 @@ public class EchoServerImpl implements EchoService {
 ```properties
 spring.dubbo.application.name=consumer
 spring.dubbo.registry.address=zookeeper://192.168.99.100:32770
-spring.dubbo.scan=cn.teaey.sprintboot.test
+
 ```
 
 在`Spring Application`的`application.properties`中添加`spring.dubbo.scan`即可支持`Dubbo`服务发布，其中`scan`表示要扫描的`package`目录。
@@ -138,6 +138,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
+@DubboComponentScan("cn.teaey.sprintboot.test")
 public class Client {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(Client.class, args);
