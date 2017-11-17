@@ -1,4 +1,4 @@
-package io.dubbo.springboot;
+/*package io.dubbo.springboot;
 
 import com.alibaba.dubbo.config.spring.AnnotationBean;
 import org.springframework.beans.BeanUtils;
@@ -22,3 +22,4 @@ public class DubboConfigurationApplicationContextInitializer implements Applicat
         }
     }
 }
+*/
