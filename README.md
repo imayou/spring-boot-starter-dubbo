@@ -28,7 +28,7 @@ mvn clean install
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.3.6.RELEASE</version>
+    <version>1.5.8.RELEASE</version>
 </parent>
  ```
 
@@ -40,7 +40,7 @@ mvn clean install
  <dependency>
     <groupId>io.dubbo.springboot</groupId>
     <artifactId>spring-boot-starter-dubbo</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2.257</version>
  </dependency>
  ```
 
